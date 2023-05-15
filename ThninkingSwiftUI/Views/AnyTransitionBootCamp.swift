@@ -7,6 +7,20 @@
 
 import SwiftUI
 
+struct RotateViewModifier:ViewModifier{
+    let rotation: Double
+    func body(content: Content) -> some View {
+        content
+            .rotationEffect(Angle(degrees: rotation))
+    }
+}
+
+extension AnyTransition{
+    static var rotating:AnyTransition {
+        return AnyTransition.modifier(active: RotateViewModifier(rotation: 180), identity: RotateViewModifier(rotation: 0))
+    }
+
+}
 struct AnyTransitionBootCamp: View {
     @State private var showRectangle:Bool = false
     var body: some View {
@@ -16,7 +30,7 @@ struct AnyTransitionBootCamp: View {
                 RoundedRectangle(cornerRadius: 25)
                     .frame(width: 250, height: 350)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .transition(AnyTransition.scale.animation(.easeOut))
+                    .transition(AnyTransition.rotating.animation(.easeOut))
             }
             Spacer()
             Text("Click Me!")
