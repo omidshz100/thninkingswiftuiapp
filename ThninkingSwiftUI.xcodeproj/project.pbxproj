@@ -12,6 +12,7 @@
 		D9141D652A120AF7002EC32F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9141D642A120AF7002EC32F /* Preview Assets.xcassets */; };
 		D9141D6D2A121082002EC32F /* ViewModifierBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9141D6C2A121082002EC32F /* ViewModifierBootCamp.swift */; };
 		D9141D6F2A121ADB002EC32F /* ButtonStyleBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9141D6E2A121ADB002EC32F /* ButtonStyleBootcamp.swift */; };
+		D9141D712A123130002EC32F /* AnyTransitionBootCamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9141D702A123130002EC32F /* AnyTransitionBootCamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		D9141D642A120AF7002EC32F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9141D6C2A121082002EC32F /* ViewModifierBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifierBootCamp.swift; sourceTree = "<group>"; };
 		D9141D6E2A121ADB002EC32F /* ButtonStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleBootcamp.swift; sourceTree = "<group>"; };
+		D9141D702A123130002EC32F /* AnyTransitionBootCamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransitionBootCamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				D9141D6C2A121082002EC32F /* ViewModifierBootCamp.swift */,
 				D9141D6E2A121ADB002EC32F /* ButtonStyleBootcamp.swift */,
+				D9141D702A123130002EC32F /* AnyTransitionBootCamp.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				D9141D6F2A121ADB002EC32F /* ButtonStyleBootcamp.swift in Sources */,
 				D9141D6D2A121082002EC32F /* ViewModifierBootCamp.swift in Sources */,
+				D9141D712A123130002EC32F /* AnyTransitionBootCamp.swift in Sources */,
 				D9141D5E2A120AF5002EC32F /* ThninkingSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
