@@ -25,6 +25,11 @@ extension AnyTransition{
     static func rotating(rotation:Double)->AnyTransition{
         return AnyTransition.modifier(active: RotateViewModifier(rotation: rotation), identity: RotateViewModifier(rotation: 0))
     }
+    
+    static var rotateOn: AnyTransition {
+        return AnyTransition.asymmetric(insertion: .rotating,
+                                        removal: .move(edge: .leading))
+    }
 
 }
 struct AnyTransitionBootCamp: View {
@@ -37,7 +42,7 @@ struct AnyTransitionBootCamp: View {
                     .frame(width: 250, height: 350)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     //.transition(AnyTransition.rotating.animation(.easeOut))
-                    .transition(.rotating(rotation: 1080))
+                    .transition(.rotateOn)
             }
             Spacer()
             Text("Click Me!")
