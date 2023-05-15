@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// first commitment start from here
 @main
 struct ThninkingSwiftUIApp: App {
     var body: some Scene {
