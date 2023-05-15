@@ -11,7 +11,7 @@ import SwiftUI
 struct ThninkingSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ViewModifierBootCamp()
+            ButtonStyleBootcamp()
         }
     }
 }

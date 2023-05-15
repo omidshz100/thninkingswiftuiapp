@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+struct ButtonStylableStyle:ButtonStyle{
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .brightness(configuration.isPressed ? 0.5:1.0)
+            //.opacity(configuration.isPressed ? 0.8:1.0)
+    }
+}
+
 struct ButtonStyleBootcamp: View {
     var body: some View {
         Button {
@@ -21,6 +29,7 @@ struct ButtonStyleBootcamp: View {
                 .cornerRadius(10)
                 .shadow(color: Color.blue.opacity(0.3), radius: 10, x: 0.0, y: 10)
         }
+        .buttonStyle(ButtonStylableStyle())
         .padding(40)
 
     }
